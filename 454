@@ -1,0 +1,11 @@
+input_line = input("Введіть цілі числа через пробіл: ")
+
+try:
+    integer_list = [int(num_str) for num_str in input_line.split()]
+except ValueError:
+    print("Помилка: Невірний формат вводу. Введіть лише цілі числа, розділені пробілами.")
+    exit()
+    
+odd_numbers_list = [number for number in integer_list if number % 2 != 0]
+
+print(odd_numbers_list)
