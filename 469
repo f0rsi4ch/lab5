@@ -1,0 +1,11 @@
+input_line = input("Введіть цифри, розділені пробілами: ")
+
+original_list = input_line.split()
+
+reversed_copy_list = original_list[:]
+
+reversed_copy_list.reverse()
+
+result_string = "".join(reversed_copy_list)
+
+print(result_string)
