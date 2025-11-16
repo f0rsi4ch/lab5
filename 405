@@ -1,0 +1,14 @@
+user_input = input("Введіть цілі числа через пробіл: ")
+
+data_list = [int(num) for num in user_input.split() if num]
+
+n = len(data_list)
+
+if n == 0:
+    print("")
+else:
+    start_index = n // 2
+    
+    second_half = data_list[start_index:]
+    
+    print(*second_half)
